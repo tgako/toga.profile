@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Portfolio</title>
+</head>
+<body style="padding-top:4.5rem;">
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">KOJI TOGA</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="ナビゲーションの切替">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#">PROFILE <span class="sr-only">(現位置)</span></a>
+                <a class="nav-item nav-link" href="#work">WORK</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid tab-content">
+        <div class="row mb-1">
+            <div class="col">
+                <h3><u>PROFILE</u></h3>
+            </div>
+        </div>
+        <div class="row">
+            <!-- プロフィール -->
+            <div class="col-4">
+                <img src="images/profile.jpg" class="rounded-circle img-fluid mx-auto d-block img-thumbnail">
+            </div>
+            <div class="col">
+                <p>1996年12月12日生まれ。<br>東京都出身。趣味はScratch。<br>
+                2015年：東京都市大学付属高等学校　卒業<br>
+                2019年：日本大学理工学部航空宇宙工学科　卒業<br>
+                2019年：日本大学大学院理工学研究科情報科学専攻　入学
+                </p>
+            </div>
+        </div>
+        <div class="row mt-3 mb-1" id="work">
+            <div class="col">
+                <h3><u>WORK</u></h3>
+            </div>
+        </div>
+        <!-- 作品 -->
+        <div class="card-deck">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="card h-100">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Vt3OlXwLA2c?rel=0" allowfullscreen></iframe>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">羽ばたき飛行機の製作</h5>
+                            <p class="card-text">2017年に第13回全日本学生室内飛行ロボットコンテストのユニーク部門に出場</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card h-100">
+                        <img src="images/form.png" alt="" class="img-fluid">
+                        <div class="card-body">
+                            <h5 class="card-title">申込みフォームの作成</h5>
+                            <p class="card-text">
+                                2018年に観望会開催のための参加申し込みフォームをGASを用いて作成。
+                                <button class="btn btn-primary mt-1" data-toggle="modal" data-target="#gist">GASのコード</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="card h-100">
+                        <img id="poster_click" src="images/poster_thumbnail.jpg" alt="" class="img-fluid" data-toggle="modal" data-target="#poster" style="cursor: hand; cursor:pointer;">
+                        <div class="card-body">
+                            <h5 class="card-title">第62回日本大学理工学部学術講演会</h5>
+                            <p class="card-text">第62回日本大学理工学部学術講演会にて、優秀発表賞を受賞しました。<a href="https://www.cst.nihon-u.ac.jp/research/gakujutu/62/pdf/A-9.pdf">学術講演会予稿</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gistの表示 -->
+    <div class="modal fade" id="gist" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>申込みフォームのGAS</h4>
+                </div>
+                <div class="modal-body">
+                    <script src="https://gist.github.com/tgako/61b4fb9ed3bb6b021666ff43d80b9e9a.js"></script>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="poster" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="images/poster.jpg" width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
