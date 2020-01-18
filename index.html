@@ -13,25 +13,30 @@
 <body style="padding-top:4.5rem;">
     <!-- navigation bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#">KOJI TOGA</a>
+        <a class="navbar-brand" href="#">
+            <img src="images/icon.png" height="30" class="d-inline-block align-top" alt="ブランド">
+            KOJI TOGA
+        </a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="ナビゲーションの切替">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a class="nav-item nav-link" href="#">PROFILE <span class="sr-only">(現位置)</span></a>
+                <a class="nav-item nav-link" href="#study">STUDY</a>
                 <a class="nav-item nav-link" href="#work">WORK</a>
             </div>
         </div>
     </nav>
     <div class="container">
+
+        <!-- プロフィール -->
         <div class="row mb-1">
             <div class="col">
                 <h3><u>PROFILE</u></h3>
             </div>
         </div>
         <div class="row">
-            <!-- プロフィール -->
             <div class="col-4">
                 <img src="images/profile.jpg" class="rounded-circle img-fluid mx-auto d-block img-thumbnail">
             </div>
@@ -40,16 +45,34 @@
                     1996年12月12日生まれ。<br>東京都出身。趣味はScratch。<br>
                     2015年：東京都市大学付属高等学校　卒業<br>
                     2019年：日本大学理工学部航空宇宙工学科　卒業<br>
-                    2019年：日本大学大学院理工学研究科情報科学専攻　入学
+                    2019年：日本大学大学院理工学研究科情報科学専攻　入学<br>
+                    現在：日本大学 <a href="http://yylab.ce.cst.nihon-u.ac.jp/index-j.html">吉川・山口研究室</a>　所属<br>
                 </p>
             </div>
         </div>
+
+        <div class="row mt-3 mb-1" id="study">
+            <div class="col">
+                <h3><u>STUDY</u></h3>
+            </div>            
+        </div>
+        <div class="row">
+            <div class="col">
+                <ul class="list-styled">
+                    <li>VR</li>
+                    <li>Unity</li>
+                    <li>Arduino</li>
+                    <li>3Dプリンター，CNC</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 作品 -->
         <div class="row mt-3 mb-1" id="work">
             <div class="col">
                 <h3><u>WORK</u></h3>
             </div>
         </div>
-        <!-- 作品 -->
         <div class="card-deck">
             <div class="row">
                 <div class="col-md-6 mb-3">
@@ -97,7 +120,7 @@
                         <div class="card-body">
                             <h5 class="card-title">申込みフォームの活用</h5>
                             <p class="card-text">
-                                2018年に小学生向けに開催したワークショップにて、GASの申込みフォームを利用。                                
+                                2018年に小学生向けに開催したワークショップにて、GASの申込みフォームを利用。
                             </p>
                         </div>
                     </div>
@@ -123,7 +146,7 @@
                     <h4>申込みフォームのGAS</h4>
                 </div>
                 <div class="modal-body">
-                    <script src="https://gist.github.com/tgako/61b4fb9ed3bb6b021666ff43d80b9e9a.js"></script>
+                    <script src="images/slime_poster_t.jpg"></script>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">閉じる</button>
